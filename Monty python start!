@@ -5,7 +5,7 @@
 
 def choice(choice1, choice2, choice3, choice4, choice5):
     while True:
-        choice = input("Choose 1 , " + choice1 + " , " + choice2 + " , " + choice3 + " , " + choice4 + " , " + choice5)
+        choice = input("Choose 1 ," + choice1 + " , " + choice2 + " , " + choice3 + " , " + choice4 + " , " + choice5)
         if choice == choice1:
             return choice1
         elif choice == choice2:
@@ -57,7 +57,7 @@ def intro():
     print(
         "He then explains that he is charging you and your knights with a sacred task, to seek the Holy Grail! He doesn't really explain what it's for or why he wants you to find it, but it's got the word Holy in it, so that must make it important, right")
     # Allow user to continue with user input
-    input("The Quest Begins! Continue?")
+    input("The Quest Begins! Continue?(press enter)")
 
 
 # intro 2
@@ -87,10 +87,26 @@ def intro2():
 
 # Camelot
 def camelot():
-    print('''Oh alright, if you must! But you don't want to stay too long. 'Tis a silly place! You make your way into the stables to find worthy steeds for yourself and your knights. Unfortunately the horses were all sold a few years back during the age of terrible
-  glueshortage. You do however manage to find a coconut which you cut in half and give to your trusty servant Patsy who skillfully bangs the two halves together to make horse hoof noises. He's a prodigy on the coconuts that Patsy!
+    print('''Oh alright, if you must! But you don't want to stay too long. 'Tis a silly place! You make your way into the stables 
+    to find worthy steeds for yourself and your knights. Unfortunately the horses were all sold a few years back during the age of terrible
+  glueshortage. You do however manage to find a coconut which you cut in half and give to your
+   trusty servant Patsy who skillfully bangs the two halves together to make horse hoof noises. He's a prodigy on the coconuts that Patsy!''')
+    print("press enter to return")
+    input("")
+    intro2()
 
-  ''')
+def the_french_castle():
+    print("""You and your fearless knights ride gallantly to the castle... Well not ride exactly, you don't have horses.
+     You sort of prance there, but you extend your hands as if you were holding reigns and it all looks very convincing!
+
+"Hallo!" You call out when you reach the castle. You can see a man with a very distinguished looking mustache in
+ the castle battlements, but he doesn't answer. "It is I, Arthur, King of the Britons!" Again, you get no reply. "We have come here on a
+  sacred quest, and I wish to speak with your master!"
+
+You get no response at all. Either the man can't hear you or he's ignoring you deliberately. If only you had some way to get his attention.""")
+    print("press enter to return")
+    input("")
+    intro2()
 
 intro()
 
