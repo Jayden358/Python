@@ -1,0 +1,97 @@
+# Cale Sumner, Jayden Williams, Ian Christensen, Daniel Embley
+
+# link to draw.io NOTE:you may have to download it, then open with draw.io
+# https://drive.google.com/open?id=14TYFIyxCwYK_H0DUVIljk2ds7WtEDSOJ
+
+def choice(choice1, choice2, choice3, choice4, choice5):
+    while True:
+        choice = input("Choose 1 , " + choice1 + " , " + choice2 + " , " + choice3 + " , " + choice4 + " , " + choice5)
+        if choice == choice1:
+            return choice1
+        elif choice == choice2:
+            return choice2
+        elif choice == choice3:
+            return choice3
+        elif choice == choice4:
+            return choice4
+        elif choice == choice5:
+            return choice5
+        else:
+            print("Sorry that is not an option.")
+            continue
+
+
+def intro():
+
+    # Intro 1 with title
+    print("""  ,/   */ .(//*. ,*  .(*(/*//.*  .#   .((/, .*  .(,/,((/.*   / .///** .*.  /   
+    ,,/ ,,/./    *,*,*,.(  .*    **,    .,  ., .*/*   .*  .*,,,/ /.   .,.,.. /   
+    ,..*(./ *    /.*, .*(  .*    .(     ..      .*    .*  .*   / *,   ,.., .*/   
+    *  / .*  ,/(,  *.  ,*  .*    ,*     ,.      ,.    ..  ..   *  ./(,  ..   *   
+    ...........................................................................  
+                             ,,                   .                        .,*   
+     .,(.     .,(            .,              .,(.  .,**                     ,*   
+     .,,       ,(  *, .,.  *,** ./,/*. ,*   .(.      **                ,*   ,*   
+     .,,       ,( .(/*.  ,*  **  ( / /,*** .,.       ./                ,*   ,*   
+     .,,       ,(  ,...    ,,,*  ... . .,  ,/         .     .               ,*   
+     .,*.......,(    *(*,*   .* .,,(/ /,/, ,/            ,*.,/ .//,/   ,*   ,*   
+     .,/.......,(  .,,   ,*  .*   ./   (.  ,*            ,*  ,./, .*,  ,*   ,*   
+     .,,       ,(  ,*    .,. .*    *, .,   ,*     ,*,,/. .*       .*,  ,*   ,*   
+     .,,       ,(  ,*    .,, .*    ,( (    ,,.      .*,  .*      ,*/.  ,*   ,*   
+     .,,       ,(  .,.   .*  .*    .**,     ,*.     .*,  .*    ** ./.  ,*   ,*   
+     .,/       ,/   ,/   ,/  .,     ,/       ,,     .*,  ,*   .*, .*,  ,,   ,*   
+    ,////.   *////.  **/(   ,///,   *          //**/(*. *///*  *// */.*///.////  
+                                   .(                                            
+                                   (.                                            
+                                  ,,""")
+
+    print(
+        "Welcome to the Quest for the Holy Grail! In this game you play as Arthur, son of Uther Pendragon, from the castle of Camelot. King of the Britons, defeater of the Saxons, Sovereign of all England! ... Yes, you are rather impressive aren't you? Today seems like any other day of you riding through your kingdom with your knights of the round table looking for dragons to save and damsels to slay or something along those lines.")
+
+    print(
+        '"Arthur! King of the Britons!" You hear a voice bellow from above and suddenly the clouds part over your head and a cheaply animated adaptation of the Lord your God shines his glory down upon you.')
+
+    print(
+        "You proceed with the ceremonial praising, grovelling and averting of your eyes for which God scolds you and tells you to stop sucking up.")
+
+    print(
+        "He then explains that he is charging you and your knights with a sacred task, to seek the Holy Grail! He doesn't really explain what it's for or why he wants you to find it, but it's got the word Holy in it, so that must make it important, right")
+    # Allow user to continue with user input
+    input("The Quest Begins! Continue?")
+
+
+# intro 2
+
+def intro2():
+    print("Your sacred quest for the Holy Grail has begun! Where do you want to look first?")
+
+    print("Camelot!")
+    print("The French Castle")
+    print("The Dark Forest")
+    print("A Nearby Village")
+    print("The Castle Anthrax")
+    # first real choice, allows movement between major places
+    choicea = choice("Camelot!", "The French Castle", "The Dark Forest", "A Nearby Village", "The Castle Anthrax")
+    if choicea == "Camelot!":
+        return camelot()
+    if choicea == "The French Castle":
+        return the_french_castle
+    if choicea == "The Dark Forest":
+        return the_dark_forest
+    if choicea == "A Nearby Village":
+        return a_nearby_village
+    if choicea == "The Castle Anthrax":
+        return the_castle_anthrax
+
+
+
+# Camelot
+def camelot():
+    print('''Oh alright, if you must! But you don't want to stay too long. 'Tis a silly place! You make your way into the stables to find worthy steeds for yourself and your knights. Unfortunately the horses were all sold a few years back during the age of terrible
+  glueshortage. You do however manage to find a coconut which you cut in half and give to your trusty servant Patsy who skillfully bangs the two halves together to make horse hoof noises. He's a prodigy on the coconuts that Patsy!
+
+  ''')
+
+intro()
+
+intro2()
